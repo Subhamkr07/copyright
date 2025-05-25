@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Kumar - Copyright & Legal Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for Animations and specific styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Subtle gradient background */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Background animation */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #a7bfe8, #6190e8, #a7bfe8);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            z-index: -1; /* Behind content */
+            opacity: 0.3; /* Subtle */
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Base Page Transition Animation */
+        .page-content {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 0.7s ease-out forwards;
+        }
+
+        @keyframes fadeInSlideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Specific animations for each page */
+        /* Copyright page uses fadeInSlideUp */
+
+        #privacy-policy-page.page-content {
+            animation: scaleIn 0.6s ease-out forwards;
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        #terms-conditions-page.page-content {
+            animation: rotateIn 0.8s ease-out forwards;
+        }
+
+        @keyframes rotateIn {
+            from { opacity: 0; transform: rotateX(-90deg); }
+            to { opacity: 1; transform: rotateX(0deg); }
+        }
+
+        /* Specific styling for sections */
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #6190e8;
+            border-radius: 2px;
+            animation: underlineGrow 1s ease-out forwards;
+        }
+
+        @keyframes underlineGrow {
+            from { width: 0; }
+            to { width: 50px; }
+        }
+
+        /* Highlight Important Text */
+        .highlight {
+            font-weight: 700; /* Bold */
+            color: #d90429; /* Red for emphasis */
+            background-color: #ffe0e0; /* Light red background */
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        /* Hover effect for footer links */
+        footer a {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #6190e8;
+            transform: translateY(-2px);
+        }
+
+        /* Ensure content takes up available space */
+        main {
+            flex-grow: 1;
+        }
+
+        /* Hide pages initially */
+        #privacy-policy-page, #terms-conditions-page {
+            display: none;
+        }
+
+        /* --- DISTINCT LAYOUT STYLES FOR EACH PAGE --- */
+
+        /* Default layout for Copyright Page */
+        .copyright-layout {
+            background-color: #ffffff; /* White */
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19);
+            border-radius: 8px;
+            padding: 24px; /* p-6 */
+        }
+
+        /* Distinct layout for Privacy Policy Page */
+        .privacy-layout {
+            background-color: #f8faff; /* Very light blue */
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.08); /* Lighter shadow */
+            border-radius: 12px; /* More rounded */
+            border: 1px solid #e0e7ff; /* Subtle border */
+            padding: 30px; /* More padding */
+        }
+
+        /* Distinct layout for Terms and Conditions Page */
+        .terms-layout {
+            background-color: #fffde7; /* Very light yellow */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Stronger shadow */
+            border-radius: 5px; /* Slightly less rounded */
+            border-left: 5px solid #ffcc00; /* Prominent left border */
+            padding: 20px; /* Slightly less padding */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="min-h-screen flex flex-col w-full max-w-7xl mx-auto p-4 md:p-8 bg-white bg-opacity-80 shadow-lg rounded-lg my-8 relative z-10">
+
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2 animate-fade-in-down">
+                Shubham Kumar
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 animate-fade-in-down animation-delay-200">
+                Official Copyright & Legal Information Hub
+            </p>
+        </header>
+
+        <main id="content-area" class="flex-grow">
+
+            <section id="copyright-page" class="page-content copyright-layout">
+                <h2 class="text-3xl font-semibold text-gray-700 mb-6 section-title">Our Copyright Policy</h2>
+
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p>
+                        Welcome to the official copyright policy page for content created and owned by <strong>Shubham Kumar</strong>. This policy outlines the terms under which our intellectual property may be used and the consequences of unauthorized use.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">What is Copyrighted?</h3>
+                    <p>
+                        <span class="highlight">All content, materials, and intellectual property displayed on this website</span>, including but not limited to text, graphics, images, photographs, videos, audio clips, software, source code, designs, layouts, and any other original works of authorship, are the <span class="highlight">exclusive property of Shubham Kumar</span> unless otherwise stated. This includes all content created, developed, and published by Shubham Kumar.
+                    </p>
+                    <p>
+                        Our copyright extends to both registered and unregistered works, protected under national and international copyright laws. This protection covers the original expression of ideas, not the ideas themselves.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Prohibited Uses</h3>
+                    <p>
+                        <span class="highlight">Without the explicit prior written permission of Shubham Kumar, you are strictly prohibited from:</span>
+                    </p>
+                    <ul class="list-disc list-inside ml-4 space-y-2">
+                        <li><strong>Reproduction:</strong> Copying, duplicating, or otherwise reproducing any part of the content.</li>
+                        <li><strong>Distribution:</strong> Distributing, publishing, or transmitting the content to third parties, whether for commercial or non-commercial purposes.</li>
+                        <li><strong>Modification:</strong> Altering, adapting, translating, or creating derivative works from the content.</li>
+                        <li><strong>Public Display/Performance:</strong> Publicly displaying or performing the content.</li>
+                        <li><strong>Commercial Use:</strong> Using the content for any commercial purpose, including selling, licensing, or renting.</li>
+                        <li><strong>Framing/Mirroring:</strong> Framing or mirroring any part of the website or its content on any other server or internet-based device.</li>
+                        <li><strong>Reverse Engineering:</strong> Decompiling, reverse engineering, or disassembling any software or code on this website.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Permitted Use (Limited)</h3>
+                    <p>
+                        You may view, download, and print pages from this website for your own personal, non-commercial use, provided that you do not remove any copyright, trademark, or other proprietary notices. <span class="highlight">Any other use requires explicit written permission from Shubham Kumar.</span>
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Reporting Copyright Infringement</h3>
+                    <p>
+                        If you believe that any content on this website infringes upon your copyright, <span class="highlight">please contact us immediately</span> with detailed information about the alleged infringement.
+                    </p>
+                </div>
+
+                <h2 class="text-3xl font-semibold text-gray-700 mt-12 mb-6 section-title">Legal Actions Against Violators</h2>
+
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p>
+                        <span class="highlight">Shubham Kumar takes copyright infringement very seriously.</span> Any unauthorized use or violation of our copyright policy will result in swift and decisive legal action. We are committed to protecting our intellectual property rights to the fullest extent of the law.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Steps Taken Against Infringement:</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-2">
+                        <li><strong>Cease and Desist Order:</strong> Our initial step will be to issue a formal "Cease and Desist" letter, demanding <span class="highlight">immediate cessation of the infringing activity.</span></li>
+                        <li><strong>DMCA Takedown Notices:</strong> For content hosted on third-party platforms, we will issue Digital Millennium Copyright Act (DMCA) takedown notices or equivalent notices.</li>
+                        <li><strong>Legal Injunctions:</strong> We will seek court injunctions to <span class="highlight">prevent further unauthorized use or distribution</span> of our copyrighted material.</li>
+                        <li><strong>Monetary Damages:</strong> We will pursue claims for monetary damages, which may include:
+                            <ul class="list-circle list-inside ml-8 space-y-1">
+                                <li><strong>Actual Damages:</strong> Compensation for the actual losses incurred.</li>
+                                <li><strong>Statutory Damages:</strong> Can be <span class="highlight">substantial and do not require proof of actual harm.</span></li>
+                                <li><strong>Infringer's Profits:</strong> Recovery of any profits made by the infringer.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Attorney's Fees and Costs:</strong> We will seek reimbursement for all legal fees, court costs, and other expenses incurred.</li>
+                        <li><strong>Publicity and Reputation Damage:</strong> In severe cases, we may also seek damages for harm to our reputation.</li>
+                        <li><strong>Criminal Penalties:</strong> In certain jurisdictions, severe copyright infringement can lead to criminal charges, <span class="highlight">including fines and imprisonment.</span></li>
+                    </ul>
+                    <p>
+                        We advise all users to respect intellectual property rights. <span class="highlight">Ignorance of this policy will not be considered a valid defense against legal action.</span> For any questions regarding content usage, please contact us directly.
+                    </p>
+                </div>
+            </section>
+
+            <section id="privacy-policy-page" class="page-content privacy-layout">
+                <h2 class="text-3xl font-semibold text-gray-700 mb-6 section-title">Privacy Policy</h2>
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p>
+                        This Privacy Policy describes how Shubham Kumar collects, uses, and discloses your information when you visit our website. <span class="highlight">We are committed to protecting your privacy and handling your data in an open and transparent manner.</span>
+                    </p>
+                    <p class="highlight">
+                        By using this website, you agree that your mobile phone number, bank account details, and other personal information may be stored and used at any time without your explicit permission.*
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Information We Collect</h3>
+                    <p>
+                        We may collect various types of information in connection with the services we provide, including:
+                    </p>
+                    <ul class="list-disc list-inside ml-4 space-y-2">
+                        <li><strong>Personal Data:</strong> Information that can be used to identify you, such as your name, email address, and any other information you <span class="highlight">voluntarily provide</span> when contacting us.</li>
+                        <li><strong>Usage Data:</strong> Information on how the website is accessed and used. This Usage Data may include information such as your computer's Internet Protocol address (e.g., IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</li>
+                        <li><strong>Cookies and Tracking Technologies:</strong> We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">How We Use Your Information</h3>
+                    <p>
+                        The collected data is used for various purposes:
+                    </p>
+                    <ul class="list-disc list-inside ml-4 space-y-2">
+                        <li>To provide and maintain our website.</li>
+                        <li>To notify you about changes to our website.</li>
+                        <li>To allow you to participate in interactive features when you choose to do so.</li>
+                        <li>To provide customer support.</li>
+                        <li>To monitor the usage of our website.</li>
+                        <li>To detect, prevent and address technical issues.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Disclosure of Data</h3>
+                    <p>
+                        We may disclose your Personal Data in the <span class="highlight">good faith belief that such action is necessary to comply with a legal obligation</span>, protect and defend our rights, or prevent wrongdoing.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Security of Data</h3>
+                    <p>
+                        <span class="highlight">The security of your data is important to us</span>, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Your Data Protection Rights</h3>
+                    <p>
+                        Depending on your location, you may have various data protection rights, including the right to <span class="highlight">access, update or delete your information</span>.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Changes to This Privacy Policy</h3>
+                    <p>
+                        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Contact Us</h3>
+                    <p>
+                        If you have any questions about this Privacy Policy, please contact us.
+                    </p>
+                </div>
+            </section>
+
+            <section id="terms-conditions-page" class="page-content terms-layout">
+                <h2 class="text-3xl font-semibold text-gray-700 mb-6 section-title">Terms and Conditions</h2>
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p>
+                        Welcome to Shubham Kumar's website. These Terms and Conditions ("Terms") govern your use of our website and services. <span class="highlight">By accessing or using our website, you agree to be bound by these Terms.</span> If you disagree with any part of the terms, then you may not access the website.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Intellectual Property</h3>
+                    <p>
+                        The website and its original content, features, and functionality are and will remain the <span class="highlight">exclusive property of Shubham Kumar</span> and its licensors. The website is protected by copyright, trademark, and other laws.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Links To Other Web Sites</h3>
+                    <p>
+                        Our website may contain links to third-party websites. <span class="highlight">Shubham Kumar has no control over, and assumes no responsibility for</span>, the content, privacy policies, or practices of any third party websites.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Termination</h3>
+                    <p>
+                        We may terminate or suspend your access immediately, without prior notice or liability, for any reason whatsoever, including <span class="highlight">without limitation if you breach the Terms.</span>
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Limitation Of Liability</h3>
+                    <p>
+                        <span class="highlight">In no event shall Shubham Kumar be liable for any indirect, incidental, special, consequential or punitive damages</span>, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use or inability to use the website.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Disclaimer</h3>
+                    <p>
+                        Your use of the website is at your sole risk. The website is provided on an <span class="highlight">"AS IS" and "AS AVAILABLE" basis</span>, without warranties of any kind.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Governing Law</h3>
+                    <p>
+                        These Terms shall be governed and construed in accordance with the <span class="highlight">laws of India</span>, without regard to its conflict of law provisions.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Changes to These Terms</h3>
+                    <p>
+                        We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our website after those revisions become effective, <span class="highlight">you agree to be bound by the revised terms.</span>
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Contact Us</h3>
+                    <p>
+                        If you have any questions about these Terms, please contact us.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="mt-8 text-center text-gray-600 text-sm md:text-base p-4 border-t border-gray-200 bg-white bg-opacity-90 rounded-b-lg">
+            <p>
+                <a href="#" onclick="showPage('copyright-page'); return false;" class="hover:underline font-medium cursor-pointer">
+                    &copy; 2025 Shubham Kumar. All Rights Reserved.
+                </a>
+            </p>
+            <div class="mt-2 space-x-4">
+                <a href="#" onclick="showPage('privacy-policy-page'); return false;" class="hover:underline font-medium">Privacy Policy</a>
+                <span class="text-gray-400">|</span>
+                <a href="#" onclick="showPage('terms-conditions-page'); return false;" class="hover:underline font-medium">Terms and Conditions</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for page navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all page sections
+            const pages = document.querySelectorAll('.page-content');
+
+            // Function to show a specific page and hide others
+            window.showPage = function(pageId) {
+                pages.forEach(page => {
+                    if (page.id === pageId) {
+                        page.style.display = 'block'; // Show the selected page
+                        page.style.animation = 'none'; // Reset animation
+                        void page.offsetWidth; // Trigger reflow to restart animation for the new page
+                        // Apply specific animation based on pageId
+                        if (pageId === 'copyright-page') {
+                            page.style.animation = 'fadeInSlideUp 0.7s ease-out forwards';
+                        } else if (pageId === 'privacy-policy-page') {
+                            page.style.animation = 'scaleIn 0.6s ease-out forwards';
+                        } else if (pageId === 'terms-conditions-page') {
+                            page.style.animation = 'rotateIn 0.8s ease-out forwards';
+                        }
+                    } else {
+                        page.style.display = 'none'; // Hide other pages
+                    }
+                });
+                // Scroll to top when changing pages for better UX
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+
+            // Initially show the copyright page
+            showPage('copyright-page');
+        });
+    </script>
+
+</body>
+</html>
+
